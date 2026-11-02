@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandex — Премиальная студия татуировки и стиля</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0c0c0e;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+        .font-serif-editorial {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .editorial-border {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .lightbox-modal {
+            display: none;
+        }
+        .lightbox-modal.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="selection:bg-neutral-800 selection:text-white">
+
+    <!-- Header -->
+    <header class="py-6 px-6 md:px-20 border-b editorial-border flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-4">
+            <span class="font-serif-editorial text-2xl md:text-3xl tracking-widest text-white uppercase">Yandex</span>
+        </div>
+        
+        <nav class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase text-neutral-400">
+            <a href="#about" class="hover:text-white transition">Философия</a>
+            <a href="#gallery" class="hover:text-white transition">Портфолио</a>
+            <a href="#contact" class="hover:text-white transition">Запись</a>
+        </nav>
+
+        <a href="#contact" class="text-xs uppercase tracking-widest px-6 py-2.5 border border-white/20 hover:border-white text-white rounded-full transition">
+            Консультация
+        </a>
+    </header>
+
+    <!-- Editorial Hero -->
+    <section class="py-24 px-6 md:px-20 max-w-7xl mx-auto border-b editorial-border">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-neutral-400 font-medium block">
+                    Премиальная студия татуировки и стиля
+                </span>
+
+                <h1 class="font-serif-editorial text-5xl sm:text-7xl md:text-8xl text-white font-normal leading-[1.02]">
+                    Искусство на теле, <br>
+                    <span class="italic font-light text-neutral-300">лишенное спешки.</span>
+                </h1>
+
+                <p class="text-neutral-400 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+                    Добавить фото или видео
+                </p>
+
+                <div class="pt-4 flex flex-wrap gap-6 items-center">
+                    <a href="#contact" class="px-8 py-3.5 bg-white text-black text-xs font-semibold uppercase tracking-widest hover:bg-neutral-200 transition">
+                        Записаться на сеанс
+                    </a>
+                    <a href="#gallery" class="text-xs uppercase tracking-widest text-neutral-300 hover:text-white transition flex items-center gap-2">
+                        <span>Смотреть работы</span>
+                        <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4">
+                <div class="relative aspect-[3/4] overflow-hidden rounded-2xl border editorial-border shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=800&q=80" alt="Master Studio" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                        <div class="text-xs text-neutral-300 font-light">
+                            «Каждая работа — это история, созданная в единственном экземпляре»
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Philosophy 3-Pillars -->
+    <section id="about" class="py-24 px-6 md:px-20 max-w-7xl mx-auto border-b editorial-border">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <div class="font-serif-editorial text-4xl text-neutral-500 font-light">01</div>
+                <h3 class="font-serif-editorial text-2xl text-white">1 клиент на сеансе</h3>
+                <p class="text-sm text-neutral-400 leading-relaxed font-light">
+                    Никаких очередей, зевак и конвейера. Студия полностью закрывается под вас для максимального комфорта и тишины.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="font-serif-editorial text-4xl text-neutral-500 font-light">02</div>
+                <h3 class="font-serif-editorial text-2xl text-white">Индивидуальный эскиз</h3>
+                <p class="text-sm text-neutral-400 leading-relaxed font-light">
+                    Мы никогда не копируем чужие картинки из интернета. Эскиз строится строго под анатомию и пожелания владельца.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="font-serif-editorial text-4xl text-neutral-500 font-light">03</div>
+                <h3 class="font-serif-editorial text-2xl text-white">Хирургическая стерильность</h3>
+                <p class="text-sm text-neutral-400 leading-relaxed font-light">
+                    Одноразовые сертифицированные картриджи, барьерная защита и медицинский автоклав высшего класса.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery with Filters -->
+    <section id="gallery" class="py-24 px-6 md:px-20 max-w-7xl mx-auto border-b editorial-border">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 gap-6">
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">Портфолио мастера</span>
+                <h2 class="font-serif-editorial text-4xl sm:text-5xl text-white mt-1">Избранные работы</h2>
+            </div>
+
+            <div class="flex flex-wrap gap-3 text-xs tracking-wider uppercase">
+                <button onclick="filterGallery('all', event)" class="gallery-tab active px-4 py-2 border border-white text-white">Все</button>
+                <button onclick="filterGallery('realism', event)" class="gallery-tab px-4 py-2 border border-white/20 text-neutral-400 hover:text-white">Реализм</button>
+                <button onclick="filterGallery('minimal', event)" class="gallery-tab px-4 py-2 border border-white/20 text-neutral-400 hover:text-white">Минимализм</button>
+                <button onclick="filterGallery('graphics', event)" class="gallery-tab px-4 py-2 border border-white/20 text-neutral-400 hover:text-white">Графика</button>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+            
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="realism" onclick="openLightbox('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=800&q=80', 'Анатомический реализм')">
+                <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=800&q=80" alt="Анатомический реализм" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Анатомический реализм</span>
+                </div>
+            </div>
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="minimal" onclick="openLightbox('https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=800&q=80', 'Тонкие линии & Минимализм')">
+                <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=800&q=80" alt="Тонкие линии & Минимализм" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Тонкие линии & Минимализм</span>
+                </div>
+            </div>
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="japan" onclick="openLightbox('https://images.unsplash.com/photo-1562962230-16e4623d36e6?auto=format&fit=crop&w=800&q=80', 'Японский орнамент')">
+                <img src="https://images.unsplash.com/photo-1562962230-16e4623d36e6?auto=format&fit=crop&w=800&q=80" alt="Японский орнамент" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Японский орнамент</span>
+                </div>
+            </div>
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="graphics" onclick="openLightbox('https://images.unsplash.com/photo-1560707303-4e980ce876ad?auto=format&fit=crop&w=800&q=80', 'Авторская графика')">
+                <img src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?auto=format&fit=crop&w=800&q=80" alt="Авторская графика" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Авторская графика</span>
+                </div>
+            </div>
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="minimal" onclick="openLightbox('https://images.unsplash.com/photo-1565058379802-dd1016805d76?auto=format&fit=crop&w=800&q=80', 'Геометрическая симметрия')">
+                <img src="https://images.unsplash.com/photo-1565058379802-dd1016805d76?auto=format&fit=crop&w=800&q=80" alt="Геометрическая симметрия" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Геометрическая симметрия</span>
+                </div>
+            </div>
+            <div class="gallery-card relative group overflow-hidden rounded-xl border editorial-border cursor-pointer aspect-[4/5]" data-cat="graphics" onclick="openLightbox('https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=800&q=80', 'Темный сюрреализм')">
+                <img src="https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=800&q=80" alt="Темный сюрреализм" class="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                    <span class="font-serif-editorial text-xl text-white tracking-wide">Темный сюрреализм</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="py-24 px-6 md:px-20 max-w-3xl mx-auto text-center">
+        <span class="text-xs uppercase tracking-[0.3em] text-neutral-500">Запись на консультацию</span>
+        <h2 class="font-serif-editorial text-4xl sm:text-5xl text-white mt-2 mb-6">Создайте свой сюжет</h2>
+        <p class="text-neutral-400 text-sm mb-10 font-light">
+            Консультация бесплатна и ни к чему вас не обязывает. Мы обсудим идею, подберем размер и рассчитаем точную стоимость.
+        </p>
+
+        <form onsubmit="event.preventDefault(); alert('Спасибо за заявку! Мастер свяжется с вами.');" class="space-y-4 text-left max-w-lg mx-auto">
+            <div>
+                <label class="block text-[11px] uppercase tracking-wider text-neutral-400 mb-2">Ваше имя</label>
+                <input type="text" placeholder="Александр" required class="w-full px-5 py-3.5 bg-neutral-900 border editorial-border text-white text-sm focus:outline-none focus:border-neutral-400 transition">
+            </div>
+            <div>
+                <label class="block text-[11px] uppercase tracking-wider text-neutral-400 mb-2">Telegram или Телефон</label>
+                <input type="text" placeholder="@username или +7..." required class="w-full px-5 py-3.5 bg-neutral-900 border editorial-border text-white text-sm focus:outline-none focus:border-neutral-400 transition">
+            </div>
+            <button type="submit" class="w-full py-4 bg-white text-black text-xs font-semibold uppercase tracking-widest hover:bg-neutral-200 transition mt-4">
+                Забронировать время
+            </button>
+        </form>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal fixed inset-0 z-50 bg-black/90 items-center justify-center p-6" onclick="closeLightbox()">
+        <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" class="max-h-[80vh] w-auto rounded-lg object-contain">
+            <div id="lightbox-caption" class="font-serif-editorial text-2xl text-white mt-4"></div>
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-neutral-400 text-3xl font-light">&times;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t editorial-border text-center text-xs tracking-wider text-neutral-600 uppercase max-w-7xl mx-auto px-6">
+        <div>&copy; 2026 Yandex. Все права защищены. Движок: ANTIGRAVITY Editorial System.</div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function filterGallery(category, ev) {
+            document.querySelectorAll('.gallery-tab').forEach(b => {
+                b.classList.remove('border-white', 'text-white');
+                b.classList.add('border-white/20', 'text-neutral-400');
+            });
+            if (ev && ev.target) {
+                ev.target.classList.remove('border-white/20', 'text-neutral-400');
+                ev.target.classList.add('border-white', 'text-white');
+            }
+
+            document.querySelectorAll('.gallery-card').forEach(c => {
+                if (category === 'all' || c.getAttribute('data-cat') === category) {
+                    c.style.display = 'block';
+                } else {
+                    c.style.display = 'none';
+                }
+            });
+        }
+
+        function openLightbox(src, title) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = title;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
